@@ -1,4 +1,0 @@
-To serve an html page directly from a GitHub folder, prepend http://htmlpreview.github.io/? to the url of the html file.
-
-For example:
-http://htmlpreview.github.io/?https://github.com/billkellett/datastax-search-workshop/blob/master/html/search-workshop-lab-1.html
