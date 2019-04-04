@@ -1,4 +1,6 @@
 placeholder.*
 *.no_asset_hub
 facet_example.png
+geo_example.png
 solr_console.png
+suggester_example.png
