@@ -1,5 +1,5 @@
 ---
-title: Asset Name
+title: Search Workshop
 type: index
 weight: 10
 ---
