@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema name="autoSolrSchema" version="1.5">
+  <types>
+    <fieldType class="org.apache.solr.schema.StrField" name="StrField"/>
+    <fieldType class="org.apache.solr.schema.TrieIntField" name="TrieIntField"/>
+    <fieldType  name="rpt"
+                class="solr.SpatialRecursivePrefixTreeFieldType" 
+                geo="false" 
+                worldBounds="ENVELOPE(-1000, 1000, 1000, -1000)"
+                maxDistErr="0.001"
+                distanceUnits="degrees" />
+  </types>
+  <fields>
+    <field indexed="true" multiValued="false" name="customer_id" type="StrField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="humane_to_animals_min" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_blood_diamonds_min" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="supports_fair_trade_min" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_gambling_min" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_weapons_min" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="protects_environment_min" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="humane_work_conditions_min" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_tobacco_min" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="csr_id" type="TrieIntField"/>
+    <field indexed="true" multiValued="false" name="customer_name" type="StrField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="humane_to_women_min" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="humane_to_children_min" type="TrieIntField"/>
+    <field name="coords" type="rpt" indexed="true" stored="true" />
+    <field indexed="true" multiValued="false" name="customer_city" type="StrField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_alcohol_min" type="TrieIntField"/>
+  </fields>
+  <uniqueKey>customer_id</uniqueKey>
+</schema>

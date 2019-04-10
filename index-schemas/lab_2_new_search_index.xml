@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema name="autoSolrSchema" version="1.5">
+  <types>
+    <fieldType class="org.apache.solr.schema.TextField" name="TextField">
+      <analyzer>
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+    <fieldType class="org.apache.solr.schema.TrieIntField" name="TrieIntField"/>
+    <fieldType class="org.apache.solr.schema.StrField" name="StrField"/>
+  </types>
+  <fields>
+    <field docValues="true" indexed="true" multiValued="false" name="protects_environment" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="humane_to_animals" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_gambling" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="humane_to_children" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_tobacco" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="humane_to_women" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_weapons" type="TrieIntField"/>
+    <field indexed="true" multiValued="false" name="instrument_industry" type="StrField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_blood_diamonds" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="supports_fair_trade" type="TrieIntField"/>
+    <field indexed="true" multiValued="false" name="instrument_name" type="StrField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="avoids_alcohol" type="TrieIntField"/>
+    <field docValues="true" indexed="true" multiValued="false" name="humane_work_conditions" type="TrieIntField"/>
+    <field indexed="true" multiValued="false" name="instrument_symbol" type="StrField"/>
+    <field indexed="true" multiValued="false" name="description" type="TextField"/>
+  </fields>
+  <uniqueKey>instrument_symbol</uniqueKey>
+</schema>
