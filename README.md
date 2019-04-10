@@ -23,4 +23,4 @@ DSE Search adds a crucial capability that is especially important to Business An
 
 ### Technical Take Aways
 
-DSE Search adds a critical capability that is not found in open-source Cassandra.
+DSE Search adds a crucial capability that is not found in open-source Cassandra.
