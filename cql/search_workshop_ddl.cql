@@ -2,7 +2,7 @@
 
 create keyspace if not exists search_workshop
 with replication = {
-    'class' : 'NetworkTopologyStrategy',
+    'class' : 'SimpleStrategy',
     'replication_factor' : 3
 };
 
