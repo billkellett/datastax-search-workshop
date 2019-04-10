@@ -16,7 +16,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 # Swap out your file name here
-curl -H "Accept-Encoding: gzip" -X POST -F 'file=@notebooks/Search_Workshop_Lab_1_Search-enabling_the_customer-facint_application.tar' http://"$IP":9091/api/v1/notebooks/import &> /dev/null
+curl -H "Accept-Encoding: gzip" -X POST -F 'file=@notebooks/Search_Workshop_Lab_1_Search-enabling_the_customer-facing_application.tar' http://"$IP":9091/api/v1/notebooks/import &> /dev/null
 curl -H "Accept-Encoding: gzip" -X POST -F 'file=@notebooks/Search_Workshop_Lab_2_Full-text_search.tar' http://"$IP":9091/api/v1/notebooks/import &> /dev/null
 curl -H "Accept-Encoding: gzip" -X POST -F 'file=@notebooks/Search_Workshop_Lab_3_Facets.tar' http://"$IP":9091/api/v1/notebooks/import &> /dev/null
 curl -H "Accept-Encoding: gzip" -X POST -F 'file=@notebooks/Search_Workshop_Lab_4_Geospatial_Search.tar' http://"$IP":9091/api/v1/notebooks/import &> /dev/null
