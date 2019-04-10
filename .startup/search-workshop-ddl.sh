@@ -30,7 +30,7 @@ then
     done
   fi
 
-   cqlsh node0 -f cql/search-workshop-ddl.cql
+   cqlsh node0 -f cql/search_workshop_ddl.cql
 
    sleep 10s
 
