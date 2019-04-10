@@ -1,7 +1,6 @@
 websocketd
 hugo
 search-workshop-ddl.sh
-search-workshop-dml.sh
 search-workshop-nodetool-repair.sh
 studionotebook.sh
 restartOpsCenter.sh
