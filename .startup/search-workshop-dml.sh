@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Search Workshop DML
+# DML for Search Workshop
 #
 echo "Starting DML"
 if [ `hostname` == 'node0' ]
@@ -29,6 +29,7 @@ then
        fi
     done
   fi
+
    cqlsh node0 -f cql/search_workshop.customer_not_searchable.cql
    sleep 10s
 
@@ -40,6 +41,5 @@ then
 
    cqlsh node0 -f cql/search_workshop.instrument_rated_searchable.cql
    sleep 10s
-   
 fi
 echo "Finished DML"
