@@ -2,7 +2,7 @@
 #
 # DML for Search Workshop
 #
-echo "Starting DDL"
+echo "Starting DML"
 if [ `hostname` == 'node0' ]
 then
 
