@@ -30,7 +30,7 @@ then
     done
   fi
 
-   cqlsh node0 -f cql/search_workshop_ddl.cql
+   cqlsh node0 -f cql/search_workshop.customer_not_searchable.cql
 
    sleep 10s
 fi
