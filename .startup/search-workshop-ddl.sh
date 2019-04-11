@@ -1,8 +1,8 @@
 #!/bin/bash
-
+#
 # DDL for Search Workshop
 #
-
+echo "Starting DDL"
 if [ `hostname` == 'node0' ]
 then
 
@@ -33,7 +33,5 @@ then
    cqlsh node0 -f cql/search_workshop_ddl.cql
 
    sleep 10s
-
-   echo "Finished DDL"
 fi
-
+echo "Finished DDL"
