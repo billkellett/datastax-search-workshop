@@ -1,0 +1,1 @@
+copy search_workshop.instrument_rated_not_searchable from '/tmp/datastax-search-workshop/cql/search_workshop.instrument_rated_not_searchable.cql' with HEADER = TRUE ;
