@@ -28,7 +28,7 @@ then
          break
        fi
     done
-
+  fi
    cqlsh node0 -f cql/search_workshop.customer_not_searchable.cql
    sleep 10s
 
@@ -40,7 +40,6 @@ then
 
    cqlsh node0 -f cql/search_workshop.instrument_rated_searchable.cql
    sleep 10s
-  fi
    
 fi
 echo "Finished DML"
