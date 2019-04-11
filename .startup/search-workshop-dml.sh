@@ -38,7 +38,7 @@ then
 
    sleep 10s
 
-   cqlsh node0 -f cql/search_workshop.instrument_rated_not_searchable.cql
+   cqlsh node0 -f cql/search_workshop.instrument_rated_not_searchable_command.cql
 
    sleep 10s
 
