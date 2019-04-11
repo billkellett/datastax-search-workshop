@@ -33,5 +33,17 @@ then
    cqlsh node0 -f cql/search_workshop.customer_not_searchable.cql
 
    sleep 10s
+
+   cqlsh node0 -f cql/search_workshop.customer_searchable.cql
+
+   sleep 10s
+
+   cqlsh node0 -f cql/search_workshop.instrument_rated_not_searchable.cql
+
+   sleep 10s
+
+   cqlsh node0 -f cql/search_workshop.instrument_rated_searchable.cql
+
+   sleep 10s
 fi
 echo "Finished DML"
