@@ -2,7 +2,7 @@
 
 # Nodetool repair for Search Workshop
 #
-
+echo "Starting nodetool repair"
 if [ `hostname` == 'node0' ]
 then
 
@@ -28,12 +28,11 @@ then
          break
        fi
     done
-  fi
 
    #run repair in case any tables changed replication factor
    nodetool repair -pr
 
    sleep 10s
-
-   echo "Finished nodetool repair"
+  fi
 fi
+echo "Finished nodetool repair"
